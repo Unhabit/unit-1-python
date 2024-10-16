@@ -1,4 +1,35 @@
 """
+Task 0 :
+"""
+class Character:
+    health = 20
+
+    def __init__(self, name):
+        self.name = name
+    
+    def damage(self, dmg=1):
+        self.health = self.health - dmg
+
+class Player(Character):
+    health = 50
+    
+    def heal(self):
+        if self.health <50:
+            self.health = self.health + 1
+    
+
+
+enemy1 = Character("Zombie")
+enemy1.damage()
+print(enemy1.health)
+
+player1 = Player("Shovo")
+player1.damage(5)
+player1.heal
+print(player1.health)
+
+
+"""
 Task 1: People Class
 Define a class called Person with attributes name and age.
 Then, write a method within the class to introduce the person with their name and age.
