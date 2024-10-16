@@ -42,7 +42,7 @@ assert factorial(0) == 1      # True: Factorial of 0 is 1
 assert factorial(3) == 10     # False: Factorial of 3 is 6, not 10
 
 """
-Exercise 3: String Reverse
+Exercise 3: String Reverse !
 """
 def reverse_string(string):
   """Reverses a given string.
